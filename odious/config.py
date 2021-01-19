@@ -1,5 +1,6 @@
 from timemachines import OPTIMIZERS
 import random
+from timemachines.optimizers.odious import optimizer_name
 import os
 
 
@@ -12,7 +13,7 @@ MATCHUPS_DIR = './matchups'
 
 
 def elo_stream_name(optimizer):
-    return 'opt_rating_'+optimizer.__name__
+    return 'optimizer_elo_rating_'+optimizer_name(optimizer)+'.json'
 
 
 def random_json_file_name():
