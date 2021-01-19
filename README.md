@@ -1,0 +1,2 @@
+# odious
+Compares optimizers 
