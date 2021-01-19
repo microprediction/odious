@@ -152,7 +152,7 @@ def comparison(write_key):
     mw = MicroWriter(write_key=write_key)
     names = [ n for n in mw.get_stream_names() if not ('z2~' in n or 'z3~' in n) ]
     n_lagged = 0
-    n = 200  # Length of time series to use
+    n = 1500  # Length of time series to use
     while n_lagged < n:
         name = random.choice(names)
         ys = list(reversed(mw.get_lagged_values(name=name, count=2000)))[:n]
