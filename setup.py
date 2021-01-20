@@ -20,7 +20,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=["odious","odious.data"],
+    packages=["odious"],
     test_suite='pytest',
     tests_require=['pytest'],
     include_package_data=True,
