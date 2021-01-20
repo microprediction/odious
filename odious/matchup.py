@@ -35,7 +35,7 @@ def random_optimizer_matchup(ys):
     print('Skater is '+f.__name__)
     evaluator = random.choice(EVALUATORS)
 
-    n_trials = random.choice([10])
+    n_trials = random.choice([50,100,200])
     n_dim = random.choice([3])
     n_burn = int(len(ys)/2)
 
